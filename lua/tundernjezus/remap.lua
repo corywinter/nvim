@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 -- open the file nav
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -49,5 +47,4 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
 
