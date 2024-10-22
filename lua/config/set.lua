@@ -33,4 +33,3 @@ vim.opt.cursorline = true
 
 vim.opt.clipboard=unnamed
 
-vim.g.mapleader = " "
