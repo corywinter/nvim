@@ -8,6 +8,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- maintain cursor position when joining lines
 vim.keymap.set("n", "J", "mzJ`z")
 
+-- redo
+vim.keymap.set("n", "U", "<C-r>")
+
 -- keep cursor in the middle when half-page jumping
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -47,4 +50,3 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
